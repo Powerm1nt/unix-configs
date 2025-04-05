@@ -1,0 +1,7 @@
+require("config.base")
+require("config.lazy")
+require("config.lualine")
+require("config.noice")
+require("config.autocompletions")
+require("config.nvimtree")
+require("mason").setup()
