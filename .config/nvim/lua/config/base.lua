@@ -1,2 +1,14 @@
 vim.wo.relativenumber = true
-
+vim.opt.mouse = "a"
+vim.opt.encoding = "UTF-8"
+vim.opt.cursorline = true
+vim.opt.clipboard = "unnamed"
+vim.opt.list = true
+vim.opt.listchars:append({ space = "·" })
+vim.keymap.set('n', '<C-t>', ':NvimTreeToggle<CR>', { noremap = true })
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+vim.opt.smarttab = true
+vim.opt.autoindent = true
+vim.opt.expandtab = true
