@@ -1,9 +1,27 @@
 return {
 {
-   "williamboman/mason.nvim"
+   "williamboman/mason.nvim",
+},
+{
+  "L3MON4D3/LuaSnip",
+  build = "make install_jsregexp",
 },
 {
    "neovim/nvim-lspconfig",
+},
+{
+  "onsails/lspkind-nvim",
+},
+{
+    'nvimdev/lspsaga.nvim',
+    lazy = false,
+    config = function()
+        require('lspsaga').setup({})
+    end,
+    dependencies = {
+        'nvim-treesitter/nvim-treesitter', -- optional
+        'nvim-tree/nvim-web-devicons',     -- optional
+    }
 },
 {
   "hrsh7th/nvim-cmp",
