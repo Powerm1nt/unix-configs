@@ -1,4 +1,7 @@
 *
+!.emacs
 !.gitignore
 !.config/nvim
+!.config/polybar
+!.config/kitty
 !.wezterm.lua
