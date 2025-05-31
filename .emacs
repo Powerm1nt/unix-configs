@@ -1,5 +1,11 @@
 ;(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
+;;essentials
+(tool-bar-mode 0)
+(global-display-line-numbers-mode)
+(electric-pair-mode t)
+(setq ido-enable-flex-matching t)
+(set-frame-font "ComicShannsMono Nerd Font 12")
 
 ;;exwm
 (require 'exwm)
@@ -30,7 +36,7 @@
 (exwm-enable)
 ;; Launch my shit
 (start-process-shell-command "polybar" nil "polybar -r")
-(start-process-shell-command "picom" nil "picom --replace")
+(start-process-shell-command "picom" nil "picom")
 
 ;; Useful shortcuts
 
@@ -40,12 +46,6 @@
 (global-set-key (kbd "s-<down>")  'shrink-window)
 (global-set-key (kbd "s-<up>")    'enlarge-window)
 
-;;essentialsf
-(tool-bar-mode 0)
-(global-display-line-numbers-mode)
-(electric-pair-mode t)
-(set-frame-font "ComicShannsMono Nerd Font 12")
-(setq ido-enable-flex-matching t)
 ;; (setq ido-everywhere t)
 ;; (ido-mode 1)
 (fido-vertical-mode 1)
@@ -153,3 +153,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
